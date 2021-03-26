@@ -224,4 +224,174 @@ main #main-operation li i {
   font-size: 20px;
   color: grey;
 }
+
+main #main-restaurant {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+      grid-template-areas: "title" "cardR1" "cardR2" "cardR3" "cardR4";
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+main #main-restaurant h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main #main-restaurant .restaurant-card {
+  width: 100%;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 2px 5px #c2c2c2;
+          box-shadow: 1px 2px 5px #c2c2c2;
+}
+
+main #main-restaurant .restaurant-card .cardContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 70px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+main #main-restaurant .restaurant-card .cardContent .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #main-restaurant .restaurant-card .cardContent h3 {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+main #main-restaurant .restaurant-card .cardContent span {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+main #main-restaurant .restaurant-card .cardContent i {
+  font-weight: bold;
+  font-style: regular;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+main #main-restaurant #cardR1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cardR1;
+}
+
+main #main-restaurant #cardR1 #imgContainerR1 {
+  height: 185px;
+  position: relative;
+}
+
+main #main-restaurant #cardR1 #imgContainerR1 img {
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+main #main-restaurant #cardR1 #imgContainerR1 .new {
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #99E2D0;
+  width: 85px;
+  height: 30px;
+  text-align: center;
+  padding-top: 8px;
+  color: #0A8D6D;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+main #main-restaurant #cardR2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: cardR2;
+}
+
+main #main-restaurant #cardR2 #imgContainerR2 {
+  height: 185px;
+  position: relative;
+}
+
+main #main-restaurant #cardR2 #imgContainerR2 img {
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+main #main-restaurant #cardR2 #imgContainerR2 .new {
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #99E2D0;
+  width: 85px;
+  height: 30px;
+  text-align: center;
+  padding-top: 8px;
+  color: #0A8D6D;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+main #main-restaurant #cardR3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: cardR3;
+}
+
+main #main-restaurant #cardR3 #imgContainerR3 {
+  height: 185px;
+}
+
+main #main-restaurant #cardR3 #imgContainerR3 img {
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+main #main-restaurant #cardR4 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: cardR4;
+}
+
+main #main-restaurant #cardR4 #imgContainerR4 {
+  height: 185px;
+}
+
+main #main-restaurant #cardR4 #imgContainerR4 img {
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 /*# sourceMappingURL=main.css.map */
