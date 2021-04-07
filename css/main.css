@@ -339,6 +339,38 @@ footer.wrapper ul li a {
   margin-right: 10px;
 }
 
+#main-restaurant .restaurant-card .cardContent a {
+  position: relative;
+  padding-top: 20px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+#main-restaurant .restaurant-card .cardContent a .icon {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+#main-restaurant .restaurant-card .cardContent a .icon-hover {
+  opacity: 0;
+  color: #FF79DA;
+  font-size: 0rem;
+}
+
+#main-restaurant .restaurant-card .cardContent a .icon-default {
+  opacity: 1;
+  font-size: 2.4rem;
+}
+
+#main-restaurant .restaurant-card .cardContent a:hover .icon-hover,
+#main-restaurant .restaurant-card .cardContent a:focus .icon-hover {
+  opacity: 1;
+  font-size: 2.4rem;
+}
+
 #main-restaurant #cardR1 #imgContainerR1, #main-restaurant #cardR1 #imgContainerR2, #main-restaurant #cardR2 #imgContainerR1, #main-restaurant #cardR2 #imgContainerR2 {
   position: relative;
 }
@@ -555,12 +587,36 @@ main #main-restaurant h2 {
   margin-right: auto;
 }
 
-#main-menu .flexContainer i {
-  font-weight: 100;
-  font-size: 2.4rem;
+#main-menu .flexContainer a {
+  position: relative;
   padding-top: 20px;
   margin-top: 10px;
   margin-right: 15px;
+}
+
+#main-menu .flexContainer a .icon {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+#main-menu .flexContainer a .icon-hover {
+  opacity: 0;
+  color: #FF79DA;
+  font-size: 0rem;
+}
+
+#main-menu .flexContainer a .icon-default {
+  opacity: 1;
+  font-size: 2.4rem;
+}
+
+#main-menu .flexContainer a:hover .icon-hover,
+#main-menu .flexContainer a:focus .icon-hover {
+  opacity: 1;
+  font-size: 2.4rem;
 }
 
 #main-menu h2 {
