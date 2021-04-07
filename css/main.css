@@ -547,6 +547,97 @@ main #main-restaurant {
   margin-bottom: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
+  position: relative;
+}
+
+main #main-restaurant .loadingSpinner {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 142px;
+  height: 40px;
+  background: white;
+  -webkit-filter: contrast(20);
+          filter: contrast(20);
+}
+
+main #main-restaurant .loadingSpinner .dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 15px;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  background: #9356DC;
+  border-radius: 50%;
+  -webkit-animation-name: anim-dot;
+          animation-name: anim-dot;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+main #main-restaurant .loadingSpinner .dots {
+  margin-top: 12px;
+  margin-left: 31px;
+  -webkit-animation-name: anim-dots;
+          animation-name: anim-dots;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+main #main-restaurant .loadingSpinner .dots span {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  background: #9356DC;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes anim-dot {
+  50% {
+    -webkit-transform: translateX(96px);
+            transform: translateX(96px);
+  }
+}
+
+@keyframes anim-dot {
+  50% {
+    -webkit-transform: translateX(96px);
+            transform: translateX(96px);
+  }
+}
+
+@-webkit-keyframes anim-dots {
+  50% {
+    -webkit-transform: translateX(-31px);
+            transform: translateX(-31px);
+  }
+}
+
+@keyframes anim-dots {
+  50% {
+    -webkit-transform: translateX(-31px);
+            transform: translateX(-31px);
+  }
 }
 
 main #main-restaurant h2 {
