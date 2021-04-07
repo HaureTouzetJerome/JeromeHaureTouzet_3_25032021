@@ -217,8 +217,16 @@ footer.wrapper ul li a {
   height: 50px;
   background: linear-gradient(-8deg, #9356DC, #FF79DA);
   cursor: pointer;
+  -webkit-transition: all ease-in  0.3s;
+  transition: all ease-in  0.3s;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+#btnSearch:hover {
+  opacity: 0.85;
+  -webkit-box-shadow: 1px 2px 5px grey;
+          box-shadow: 1px 2px 5px grey;
 }
 
 #btnSearch:focus {
@@ -233,6 +241,14 @@ footer.wrapper ul li a {
   height: 50px;
   background: linear-gradient(-8deg, #9356DC, #FF79DA);
   cursor: pointer;
+  -webkit-transition: all ease-in  0.3s;
+  transition: all ease-in  0.3s;
+}
+
+#btnOrder:hover {
+  opacity: 0.85;
+  -webkit-box-shadow: 1px 2px 5px grey;
+          box-shadow: 1px 2px 5px grey;
 }
 
 #btnOrder:focus {
