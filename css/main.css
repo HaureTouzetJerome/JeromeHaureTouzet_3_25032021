@@ -310,57 +310,6 @@ footer.wrapper ul li a {
   font-size: 2rem;
 }
 
-#main-menu li {
-  -webkit-animation: fadeIn 0.5s linear;
-          animation: fadeIn 0.5s linear;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-#main-menu li:nth-child(1) {
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
-}
-
-#main-menu li:nth-child(2) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-#main-menu li:nth-child(3) {
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
-}
-
-#main-menu li:nth-child(4) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 #main-restaurant .restaurant-card {
   width: 100%;
   border-radius: 15px;
@@ -456,7 +405,7 @@ footer.wrapper ul li a {
   right: 10px;
 }
 
-#main-menu .cardMenu {
+#main-menu a .cardMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,15 +416,19 @@ footer.wrapper ul li a {
           box-shadow: 1px 2px 5px #c2c2c2;
   margin-top: 15px;
   margin-bottom: 15px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-#main-menu .cardMenu .menu {
+#main-menu a .cardMenu .menu {
   width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   margin-right: auto;
   text-overflow: ellipsis;
 }
 
-#main-menu .cardMenu .menu h3 {
+#main-menu a .cardMenu .menu h3 {
   font-size: 1.7rem;
   padding-top: 10px;
   padding-bottom: 8px;
@@ -485,14 +438,14 @@ footer.wrapper ul li a {
   text-overflow: ellipsis;
 }
 
-#main-menu .cardMenu .menu .flexcontainer {
+#main-menu a .cardMenu .menu .flexcontainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-left: 10px;
 }
 
-#main-menu .cardMenu .menu .flexcontainer .description {
+#main-menu a .cardMenu .menu .flexcontainer .description {
   font-size: 1.4rem;
   margin-right: auto;
   white-space: nowrap;
@@ -500,14 +453,14 @@ footer.wrapper ul li a {
   text-overflow: ellipsis;
 }
 
-#main-menu .cardMenu .menu .flexcontainer .price {
+#main-menu a .cardMenu .menu .flexcontainer .price {
   font-size: 1.5rem;
   color: #353535;
   font-weight: bold;
   margin-right: 20px;
 }
 
-#main-menu .cardMenu .check {
+#main-menu a .cardMenu .check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,14 +468,86 @@ footer.wrapper ul li a {
   color: white;
   border-radius: 0 12px 12px 0;
   border: none;
-  width: 70px;
+  width: 0%;
   height: 68px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-#main-menu .cardMenu .check i {
+#main-menu a .cardMenu .check i {
+  opacity: 0;
   margin: auto;
   font-size: 2rem;
   padding-top: 5px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#main-menu a:hover .cardMenu .menu {
+  width: 80%;
+}
+
+#main-menu a:hover .cardMenu .check {
+  width: 20%;
+}
+
+#main-menu a:hover .cardMenu .check i {
+  opacity: 100%;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#main-menu li {
+  -webkit-animation: fadeIn 0.5s linear;
+          animation: fadeIn 0.5s linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#main-menu li:nth-child(1) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+#main-menu li:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+#main-menu li:nth-child(3) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+#main-menu li:nth-child(4) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 main #main-search {
