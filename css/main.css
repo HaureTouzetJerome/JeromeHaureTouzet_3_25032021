@@ -351,16 +351,16 @@ footer.wrapper ul li a {
   margin-left: 10px;
 }
 
-#main-restaurant .restaurant-card .cardContent a {
+#main-restaurant .restaurant-card .cardContent .heart {
   position: relative;
   margin-right: 25px;
 }
 
-#main-restaurant .restaurant-card .cardContent a .icon-hover, #main-restaurant .restaurant-card .cardContent a .icon-default {
+#main-restaurant .restaurant-card .cardContent .heart .icon-hover, #main-restaurant .restaurant-card .cardContent .heart .icon-default {
   margin-top: 23px;
 }
 
-#main-restaurant .restaurant-card .cardContent a .icon {
+#main-restaurant .restaurant-card .cardContent .heart .icon {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -368,19 +368,19 @@ footer.wrapper ul li a {
   transition: all 0.4s ease-in;
 }
 
-#main-restaurant .restaurant-card .cardContent a .icon-hover {
+#main-restaurant .restaurant-card .cardContent .heart .icon-hover {
   opacity: 0;
   color: #FF79DA;
   font-size: 0rem;
 }
 
-#main-restaurant .restaurant-card .cardContent a .icon-default {
+#main-restaurant .restaurant-card .cardContent .heart .icon-default {
   opacity: 1;
   font-size: 2.2rem;
 }
 
-#main-restaurant .restaurant-card .cardContent a:hover .icon-hover,
-#main-restaurant .restaurant-card .cardContent a:focus .icon-hover {
+#main-restaurant .restaurant-card .cardContent .heart:hover .icon-hover,
+#main-restaurant .restaurant-card .cardContent .heart:focus .icon-hover {
   opacity: 1;
   font-size: 2.2rem;
 }
