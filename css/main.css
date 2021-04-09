@@ -312,6 +312,7 @@ footer.wrapper ul li a {
 
 #main-restaurant .restaurant-card {
   width: 100%;
+  min-width: 215px;
   border-radius: 15px;
   -webkit-box-shadow: 1px 2px 5px #c2c2c2;
           box-shadow: 1px 2px 5px #c2c2c2;
@@ -339,27 +340,24 @@ footer.wrapper ul li a {
           flex-direction: column;
 }
 
-#main-restaurant .restaurant-card .cardContent h3 {
+#main-restaurant .restaurant-card .cardContent .flexContainer h3 {
   font-weight: bold;
   margin-top: 10px;
   margin-left: 10px;
 }
 
-#main-restaurant .restaurant-card .cardContent span {
+#main-restaurant .restaurant-card .cardContent .flexContainer span {
   margin-top: 5px;
   margin-left: 10px;
 }
 
-#main-restaurant .restaurant-card .cardContent i {
-  margin-top: 10px;
-  margin-right: 10px;
-}
-
 #main-restaurant .restaurant-card .cardContent a {
   position: relative;
-  padding-top: 20px;
-  margin-top: 10px;
-  margin-right: 15px;
+  margin-right: 25px;
+}
+
+#main-restaurant .restaurant-card .cardContent a .icon-hover, #main-restaurant .restaurant-card .cardContent a .icon-default {
+  margin-top: 23px;
 }
 
 #main-restaurant .restaurant-card .cardContent a .icon {
@@ -378,13 +376,13 @@ footer.wrapper ul li a {
 
 #main-restaurant .restaurant-card .cardContent a .icon-default {
   opacity: 1;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 
 #main-restaurant .restaurant-card .cardContent a:hover .icon-hover,
 #main-restaurant .restaurant-card .cardContent a:focus .icon-hover {
   opacity: 1;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 
 #main-restaurant #cardR1 #imgContainerR1, #main-restaurant #cardR1 #imgContainerR2, #main-restaurant #cardR2 #imgContainerR1, #main-restaurant #cardR2 #imgContainerR2 {
@@ -392,6 +390,7 @@ footer.wrapper ul li a {
 }
 
 #main-restaurant #cardR1 #imgContainerR1 .new, #main-restaurant #cardR1 #imgContainerR2 .new, #main-restaurant #cardR2 #imgContainerR1 .new, #main-restaurant #cardR2 #imgContainerR2 .new {
+  font-weight: bold;
   font-size: 1.4rem;
   border-radius: 4px;
   background-color: #99E2D0;
@@ -411,6 +410,7 @@ footer.wrapper ul li a {
   display: flex;
   width: 100%;
   height: 68px;
+  background-color: white;
   border-radius: 12px;
   -webkit-box-shadow: 1px 2px 5px #c2c2c2;
           box-shadow: 1px 2px 5px #c2c2c2;
@@ -590,12 +590,14 @@ main #main-search .search-container {
 }
 
 main #main-search .search-container h1 {
+  text-align: center;
   font-size: 2.2rem;
   font-weight: bold;
   margin-top: 35px;
 }
 
 main #main-search .search-container h2 {
+  text-align: center;
   font-weight: lighter;
   margin-top: 10px;
   font-size: 1.8rem;
@@ -746,7 +748,7 @@ main #main-restaurant h2 {
 }
 
 #main-menu {
-  background-color: #EAEAEA;
+  background-color: #F6F6F6;
   border-radius: 30px 30px 0 0;
   margin-top: -30px;
 }
