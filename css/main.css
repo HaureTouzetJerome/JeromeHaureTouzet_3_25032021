@@ -369,8 +369,12 @@ footer.wrapper ul li a {
 }
 
 #main-restaurant .restaurant-card .cardContent .heart .icon-hover {
+  display: initial;
+  background: linear-gradient(50deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
-  color: #FF79DA;
   font-size: 0rem;
 }
 
@@ -382,6 +386,12 @@ footer.wrapper ul li a {
 #main-restaurant .restaurant-card .cardContent .heart:hover .icon-hover,
 #main-restaurant .restaurant-card .cardContent .heart:focus .icon-hover {
   opacity: 1;
+  font-size: 2.2rem;
+}
+
+#main-restaurant .restaurant-card .cardContent .heart:hover .icon-default,
+#main-restaurant .restaurant-card .cardContent .heart:focus .icon-default {
+  opacity: 0;
   font-size: 2.2rem;
 }
 
@@ -405,6 +415,7 @@ footer.wrapper ul li a {
 }
 
 #main-menu a .cardMenu {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,13 +480,14 @@ footer.wrapper ul li a {
   border-radius: 0 12px 12px 0;
   border: none;
   width: 0%;
+  max-width: 90px;
   height: 68px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 #main-menu a .cardMenu .check i {
-  opacity: 0;
+  opacity: 1;
   margin: auto;
   font-size: 2rem;
   padding-top: 5px;
@@ -494,7 +506,6 @@ footer.wrapper ul li a {
 }
 
 #main-menu a:hover .cardMenu .check i {
-  opacity: 100%;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
@@ -788,8 +799,12 @@ main #main-restaurant h2 {
 }
 
 #main-menu .flexContainer a .icon-hover {
+  display: initial;
+  background: linear-gradient(50deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
-  color: #FF79DA;
   font-size: 0rem;
 }
 
@@ -801,6 +816,12 @@ main #main-restaurant h2 {
 #main-menu .flexContainer a:hover .icon-hover,
 #main-menu .flexContainer a:focus .icon-hover {
   opacity: 1;
+  font-size: 2.4rem;
+}
+
+#main-menu .flexContainer a:hover .icon-default,
+#main-menu .flexContainer a:focus .icon-default {
+  opacity: 0;
   font-size: 2.4rem;
 }
 
