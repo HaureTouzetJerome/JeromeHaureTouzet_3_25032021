@@ -354,45 +354,41 @@ footer.wrapper ul li a {
 #main-restaurant .restaurant-card .cardContent .heart {
   position: relative;
   margin-right: 25px;
+  margin-top: 23px;
 }
 
-#main-restaurant .restaurant-card .cardContent .heart .icon-hover, #main-restaurant .restaurant-card .cardContent .heart .icon-default {
-  margin-top: 23px;
+#main-restaurant .restaurant-card .cardContent .heart:hover .icon .icon-hover {
+  opacity: 1;
+  font-size: 2.2rem;
+}
+
+#main-restaurant .restaurant-card .cardContent .heart:hover .icon .icon-default {
+  opacity: 0;
 }
 
 #main-restaurant .restaurant-card .cardContent .heart .icon {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+}
+
+#main-restaurant .restaurant-card .cardContent .heart .icon-default {
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+  opacity: 1;
+  font-size: 2.2rem;
 }
 
 #main-restaurant .restaurant-card .cardContent .heart .icon-hover {
   display: initial;
+  -webkit-transition: all .6s ease-in;
+  transition: all .6s ease-in;
   background: linear-gradient(50deg, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
-  font-size: 0rem;
-}
-
-#main-restaurant .restaurant-card .cardContent .heart .icon-default {
-  opacity: 1;
-  font-size: 2.2rem;
-}
-
-#main-restaurant .restaurant-card .cardContent .heart:hover .icon-hover,
-#main-restaurant .restaurant-card .cardContent .heart:focus .icon-hover {
-  opacity: 1;
-  font-size: 2.2rem;
-}
-
-#main-restaurant .restaurant-card .cardContent .heart:hover .icon-default,
-#main-restaurant .restaurant-card .cardContent .heart:focus .icon-default {
-  opacity: 0;
-  font-size: 2.2rem;
+  font-size: 0.05rem;
 }
 
 #main-restaurant #cardR1 #imgContainerR1, #main-restaurant #cardR1 #imgContainerR2, #main-restaurant #cardR2 #imgContainerR1, #main-restaurant #cardR2 #imgContainerR2 {
@@ -790,39 +786,38 @@ main #main-restaurant h2 {
   margin-right: 15px;
 }
 
+#main-menu .flexContainer a:hover .icon .icon-hover {
+  opacity: 1;
+  font-size: 2.4rem;
+}
+
+#main-menu .flexContainer a:hover .icon .icon-default {
+  opacity: 0;
+}
+
 #main-menu .flexContainer a .icon {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+}
+
+#main-menu .flexContainer a .icon-default {
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+  opacity: 1;
+  font-size: 2.4rem;
 }
 
 #main-menu .flexContainer a .icon-hover {
   display: initial;
+  -webkit-transition: all .6s ease-in;
+  transition: all .6s ease-in;
   background: linear-gradient(50deg, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
-  font-size: 0rem;
-}
-
-#main-menu .flexContainer a .icon-default {
-  opacity: 1;
-  font-size: 2.4rem;
-}
-
-#main-menu .flexContainer a:hover .icon-hover,
-#main-menu .flexContainer a:focus .icon-hover {
-  opacity: 1;
-  font-size: 2.4rem;
-}
-
-#main-menu .flexContainer a:hover .icon-default,
-#main-menu .flexContainer a:focus .icon-default {
-  opacity: 0;
-  font-size: 2.4rem;
+  font-size: 0.05rem;
 }
 
 #main-menu h2 {
