@@ -411,12 +411,12 @@ footer.wrapper ul li a {
 }
 
 #main-menu a .cardMenu {
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 68px;
+  overflow: hidden;
   background-color: white;
   border-radius: 12px;
   -webkit-box-shadow: 1px 2px 5px #c2c2c2;
@@ -494,11 +494,11 @@ footer.wrapper ul li a {
 }
 
 #main-menu a:hover .cardMenu .menu {
-  width: 80%;
+  width: 100%;
 }
 
 #main-menu a:hover .cardMenu .check {
-  width: 20%;
+  width: 100%;
 }
 
 #main-menu a:hover .cardMenu .check i {
