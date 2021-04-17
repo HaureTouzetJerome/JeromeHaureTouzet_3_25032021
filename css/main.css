@@ -1,4 +1,4 @@
-body main #main-search.wrapper, body main #main-search.wrapper .search-bar, body main #main-search.wrapper .search-container, #main-order {
+body main .main-search .search-bar, body main .main-search .search-container.wrapper, #main-order {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -782,27 +782,19 @@ body .preload .loadingSpinner .dots span {
   }
 }
 
-body main #main-search.wrapper {
-  padding: 0 0px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body main #main-search.wrapper .search-bar {
+body main .main-search .search-bar {
   -webkit-box-shadow: inset 0 5px 6px -5px #b8b7b7;
           box-shadow: inset 0 5px 6px -5px #b8b7b7;
   height: 50px;
   width: 100%;
-  max-width: 1440px;
+  min-width: 340px;
 }
 
-body main #main-search.wrapper .search-bar i {
+body main .main-search .search-bar i {
   font-size: 1.6rem;
 }
 
-body main #main-search.wrapper .search-bar input {
+body main .main-search .search-bar input {
   font-weight: bold;
   max-width: 145px;
   height: 25px;
@@ -811,25 +803,25 @@ body main #main-search.wrapper .search-bar input {
   padding-right: 15px;
 }
 
-body main #main-search.wrapper .search-bar input:focus {
+body main .main-search .search-bar input:focus {
   outline: none;
 }
 
-body main #main-search.wrapper .search-container {
+body main .main-search .search-container.wrapper {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-body main #main-search.wrapper .search-container h1 {
+body main .main-search .search-container.wrapper h1 {
   text-align: center;
   font-size: 2.2rem;
   font-weight: bold;
   margin-top: 35px;
 }
 
-body main #main-search.wrapper .search-container h2 {
+body main .main-search .search-container.wrapper h2 {
   text-align: center;
   font-weight: lighter;
   margin-top: 10px;
