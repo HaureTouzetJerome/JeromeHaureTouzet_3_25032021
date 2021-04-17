@@ -882,9 +882,30 @@ body main #main-restaurant h2 {
 .main-photo {
   height: 250px;
   width: 100%;
+  min-width: 340px;
   background-size: cover;
   background-position: 50% 44%;
   background-repeat: no-repeat;
+}
+
+@media all and (min-width: 426px) and (max-width: 525px) {
+  .main-photo {
+    height: 300px;
+  }
+}
+
+@media all and (min-width: 526px) and (max-width: 1440px) {
+  .main-photo {
+    height: 350px;
+    background-position: 50% 67%;
+  }
+}
+
+@media all and (min-width: 1441px) {
+  .main-photo {
+    height: 400px;
+    background-position: 50% 67%;
+  }
 }
 
 #main-menu {
