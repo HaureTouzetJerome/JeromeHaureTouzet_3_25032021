@@ -208,7 +208,13 @@ footer h3 {
 }
 
 footer ul {
-  display: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   list-style: none;
   /*@MEDIA-FOOTER*/
 }
@@ -230,9 +236,10 @@ footer ul li a {
 
 @media all and (min-width: 540px) and (max-width: 1024px) {
   footer ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   footer ul li {
     margin-right: 40px;
@@ -243,9 +250,10 @@ footer ul li a {
 
 @media all and (min-width: 1025px) {
   footer ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   footer ul li {
     margin-right: 40px;
@@ -439,7 +447,6 @@ footer ul li a {
   -webkit-transition: all .6s ease-in;
   transition: all .6s ease-in;
   background: linear-gradient(50deg, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -974,7 +981,6 @@ body main #main-restaurant h2 {
   -webkit-transition: all .6s ease-in;
   transition: all .6s ease-in;
   background: linear-gradient(50deg, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
