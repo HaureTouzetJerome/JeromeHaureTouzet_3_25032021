@@ -337,6 +337,12 @@ footer.wrapper ul li a {
   font-size: 2rem;
 }
 
+@media all and (min-width: 785px) {
+  #main-step ul {
+    text-align: center;
+  }
+}
+
 #main-restaurant .restaurant-card {
   width: 100%;
   min-width: 215px;
@@ -823,6 +829,12 @@ body main #main-step h2 {
   font-weight: bold;
   margin-top: 90px;
   margin-bottom: 20px;
+}
+
+@media all and (min-width: 785px) {
+  body main #main-step h2 {
+    text-align: center;
+  }
 }
 
 body main #main-restaurant {
